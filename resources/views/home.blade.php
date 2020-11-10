@@ -67,6 +67,16 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Visitor's Record</h5>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <p class="card-text">you are a normal user below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>

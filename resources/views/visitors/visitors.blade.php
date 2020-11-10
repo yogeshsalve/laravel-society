@@ -13,14 +13,14 @@
 <br>
 
 <div class="card" style="width: 60rem;">
-  <div class="card-header">
+  <div class="card-header text-white .bg-primary" style="background-color: #1d5bb8;">
     <h2>Visitor Registration</h2>
   </div>
   <br>
   <div class="container">
  
 
-  <form action="visitors" method="POST">
+  <form action="visitor" method="POST">
   @csrf
   <div class="form-group">
     <!-- <label for="inputName">Name</label> -->
@@ -65,7 +65,7 @@
   
     
 <div class="form-row"> 
-  <button type="submit" class="btn btn-primary">Create Entry</button>
+  <button type="submit" class="btn btn-primary float-right">Create Entry</button>
   </div>
   <br>
 </form>

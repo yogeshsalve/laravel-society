@@ -58,19 +58,94 @@
                         </div>
                     @endif
 
-                    Welcome {{ __( Auth::user()->name) }}
+                    <h3>Welcome {{ __( Auth::user()->name) }}</h3>
 
 <div class="card">
-  
 <div class="row">
-  <div class="col-sm-6">
+
+  <div class="col-sm-12">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Pay your Maintenance Here</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">
+        
+        
+        <form>
+  
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Select Service</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Home Maintenance</option>
+        <option>Car Parking Maintenance</option>
+        <option>Amenities Maintenance</option>
+
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4">Select Year</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>2020</option>
+        <option>2021</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-3">
+      <label for="inputPassword4">Select Month</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>Jun</option>
+        <option>Jul</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+   
+    <input type="text" class="form-control" id="inputAddress" >
+  </div>
+  
+
+
+  
+    
+  <button type="submit" class="btn btn-primary float-right">Click to Pay</button>
+</form>
+        
       </div>
     </div>
+
+<!-- new section -->
+
+<!-- new section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
   
 </div>
@@ -85,6 +160,8 @@
                 </div>
             </div>
         </div>
+
+        
     </div>
 </div>
 
