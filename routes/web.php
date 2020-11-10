@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\VisitorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,28 +29,23 @@ Route::get('/admin', function() {
  Route::get('/amenities', [PagesController::class, 'amenities']);
  Route::get('/parking', [PagesController::class, 'parking']);
  Route::get('/complaints', [PagesController::class, 'complaints']);
+
+ Route::get('visitors', [VisitorController::class, 'visitors']);
+//  Route::view('/visitors', 'visitor');
+ Route::post('visitors',[VisitorController::class, 'addData']);
 // Route::get('/maintenance', function() {
 //     return view('maintenance');
 // });
 
 
-// Route::get('/household', function() {
-//     return view('pages.household');
-// });
-
-// Route::get('/amenities', function() {
-//     return view('pages.amenities');
-// });
-
-// Route::get('/parking', function() {
-//     return view('pages.parking');
-// });
-
-// Route::get('/complaints', function() {
-//     return view('pages.complaints');
-// });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 

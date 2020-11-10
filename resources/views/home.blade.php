@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Society</a>
+  <a class="navbar-brand" href="">Society</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,9 +32,7 @@
         <a class="nav-link" href="/complaints">Complaints</a>
       </li>
 
-      <li class="nav-item ">
-        <a class="nav-link" href="/abc">new link <span class="sr-only">(current)</span></a>
-      </li>
+    
       
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -69,7 +67,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Visitor's Record</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">you are a normal user below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
