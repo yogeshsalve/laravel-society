@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VisitorController;
+use App\Http\Controllers\contactusController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,16 +25,28 @@ Route::get('/admin', function() {
 });
 
 
+// Route::get('/contactus', function() {
+//     return view('contactus');
+// });
+
+// Route::view('contactus', 'contactus');
+
+
+
  Route::get('/maintenance', [PagesController::class, 'maintenance']);
  Route::get('/household', [PagesController::class, 'household']);
  Route::get('/amenities', [PagesController::class, 'amenities']);
  Route::get('/parking', [PagesController::class, 'parking']);
  Route::get('/complaints', [PagesController::class, 'complaints']);
+ Route::get('/contactus', [contactusController::class, 'contactus']);
 
  Route::get('visitors', [VisitorController::class, 'visitors']);
+
  
- Route::post('visitors',[VisitorController::class, 'addData']);
- Route::get('visitor_list',[VisitorController::class, 'show']);   
+ Route::post('visitors',[VisitorController::class, 'addData']); 
+ Route::get('visitor_list',[VisitorController::class, 'show']); 
+ 
+ Route::post('contactus', [contactusController::class, 'addContact']);
 
 
 
@@ -42,10 +55,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// Route::view('/visitors/vistor_list');
+
+
+
+
 

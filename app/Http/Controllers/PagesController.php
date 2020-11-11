@@ -35,5 +35,12 @@ class PagesController extends Controller
        return view('/pages.complaints');
    
    }
+
+//    public function contactus()
+//    {
+//        return view('/pages.contactus');
+   
+//    }
+ 
 }
 

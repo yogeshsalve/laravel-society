@@ -13,14 +13,14 @@
 <br>
 
 <div class="card" style="width: 60rem;">
-  <div class="card-header text-white .bg-primary" style="background-color: #1d5bb8;">
+  <div class="card-header text-white" style="background-color: #1d5bb8;">
     <h2>Visitor Registration</h2>
   </div>
   <br>
   <div class="container">
  
 
-  <form action="visitor" method="POST">
+  <form action="visitors" method="POST">
   @csrf
   <div class="form-group">
     <!-- <label for="inputName">Name</label> -->
@@ -52,7 +52,8 @@
 <div class="form-row"> 
 <div class="form-group col-md-6">
   <!-- <label for="inputFrom">From</label> -->
-  <input type="date" class="form-control" name="Entry_time" id="Entry_time" placeholder="In Time">
+  <input type="datetime-local" class="form-control" name="Entry_time" id="Entry_time">
+  <!-- <input type="date" class="form-control" name="Entry_time" id="Entry_time" placeholder="In Time"> -->
 </div>
 <div class="form-group col-md-6">
   <!-- <label for="inputTo">Visitng To</label> -->
@@ -64,9 +65,10 @@
   
   
     
-<div class="form-row"> 
+<!-- <div class="form-row">  -->
+  <button type="submit" class="btn btn-primary float-left">Back</button>
   <button type="submit" class="btn btn-primary float-right">Create Entry</button>
-  </div>
+  <!-- </div> -->
   <br>
 </form>
 
@@ -74,6 +76,12 @@
 
 
   </div>
+
+  <!-- <div class="form-row">
+  <button type="submit" class="btn btn-primary float-right">Create Entry</button>
+  </div> -->
+
+
 </div>
 </body>
 </html>

@@ -1,4 +1,15 @@
 @extends('layouts.app')
+<html>
+<head>
+
+<style>
+  .card-header{
+        height: 40px;
+   }
+</style>
+
+</head>
+<body>
 
 @section('content')
 <div class="container">
@@ -31,17 +42,18 @@
       <li class="nav-item">
         <a class="nav-link" href="/complaints">Complaints</a>
       </li>
-
+     
     
       
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="/contactus">Contact Us</a>
+    </li>
+    </ul>
   </div>
 </nav>
 </div>
@@ -61,15 +73,37 @@
                     <h3>Welcome {{ __( Auth::user()->name) }}</h3>
 
 <div class="card">
-  
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Visitor's Record</h5>
+        <h5 class="card-title"></h5>
         
         
-        
+        <div class="container">
+<div class="card" style="width: 28rem;">
+  <div class="card-header text-white" style="background-color: #1d5bb8;">
+    <h4><center>Todays Visitors</center></h4>
+  </div>
+  <!-- <br> -->
+  <table border="1">
+<tr>
+<th>Id</td>
+<th>Name</th>
+<th>Contact No</th>
+<th>Vehicle No</th>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+</div>
+</div>
         
         
         
@@ -128,3 +162,5 @@
 </div>
 
 @endsection
+</body>
+</html>

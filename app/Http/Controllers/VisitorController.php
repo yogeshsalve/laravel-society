@@ -24,16 +24,14 @@ class VisitorController extends Controller
         $visitor->Exit_time=$request->Exit_time;
         $visitor->save();
         $request->Session()->flash('status','entry Submitted successfully');
-    	return redirect('visitor/visitor_list');
+    	return redirect('/visitor_list');
         
     }
 
     public function show()
     {
-    	// $data= visitor::all();
-        // return view('/visitor/visitor_list',['data'=>$data ]);
-        // 
+    	
         $data= visitor::all();
-        return view('visitors.visitor_list',['visitors'=>$data]);
+        return view('visitor_list',['visitors'=>$data]);
     }
 }
