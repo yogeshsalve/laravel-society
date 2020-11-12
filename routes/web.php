@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\contactusController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,13 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/admin', function() {
-    return view('admin.admin-login');
-});
+// Route::get('/admin', function() {
+//     return view('admin.admin-login');
+// });
+
+Route::get('admin', [AdminController::class, 'admins']);
+Route::post('admin', [AdminController::class, 'addAdmin']);
+
 
 
 // Route::get('/contactus', function() {
@@ -40,9 +45,7 @@ Route::get('/admin', function() {
  Route::get('/complaints', [PagesController::class, 'complaints']);
  Route::get('/contactus', [contactusController::class, 'contactus']);
 
- Route::get('visitors', [VisitorController::class, 'visitors']);
-
- 
+ Route::get('visitors', [VisitorController::class, 'visitors']); 
  Route::post('visitors',[VisitorController::class, 'addData']); 
  Route::get('visitor_list',[VisitorController::class, 'show']); 
  

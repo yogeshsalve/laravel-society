@@ -1,4 +1,58 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+<br>
+<br>
+
+  <div class="container">
+    <div class="card" style="width: 28rem;" >
+      <div class="card-header text-white" style="background-color: #1d5bb8;">
+        <h4><center>Admin Login</center></h4>
+      </div>
+      <div class="card-body ">
+
+        <div class="container">
+          <form action="admin" method="POST">
+              @csrf
+              <div class="form-group">
+              <label for="inputemail">Email Id</label>
+              <input type="email" class="form-control" name="email" id="inputemail" placeholder="Enter Email ">
+              </div>
+
+              <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Enter Password">
+              </div>
+              <button type="submit" class="btn btn-primary flow-right">Login</button>
+          </form>
+        </div>
+       </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html>
 <style>
 input[type=text], [type=password], select {
@@ -53,29 +107,24 @@ div {
 <br>
 <br>
 
-<!-- <h3>Admin Login</h3> -->
+
 
 <div class="card" style="width: 27rem;">
 <div class="card-header">
     Login
   </div>
-  <form action="/action_page.php">
+  <form action="admin" method="POST">
+    @csrf
     <label for="fname">Email</label>
     <input type="text" id="email" name="email" placeholder="Enter your Email..">
 
     <label for="lname">Password</label>
     <input type="password" id="password" name="password" placeholder="Enter password">
 
-    <!-- <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-   -->
-    <input type="submit" value="Submit">
+  
+    <input type="submit" value="Login">
   </form>
 </div>
 </center>
 </body>
-</html>
+</html> -->

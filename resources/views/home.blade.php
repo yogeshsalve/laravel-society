@@ -43,11 +43,6 @@
         <a class="nav-link" href="/complaints">Complaints</a>
       </li>
      
-    
-      
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> -->
     </ul>
     <ul class="navbar-nav ml-auto">
     <li class="nav-item">
@@ -63,14 +58,14 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
+                <div class="card-body bg-secondary mb-3">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    <h3>Welcome {{ __( Auth::user()->name) }}</h3>
+                    <h5 class="text-white">Welcome {{ __( Auth::user()->name) }}</h5>
 
 <div class="card">
 <div class="row">

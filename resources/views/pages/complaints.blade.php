@@ -42,17 +42,16 @@
         <a class="nav-link" href="/parking">Parking</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/complaints">Complaints</a>
+        <a class="nav-link disabled" href="/complaints">Complaints</a>
       </li>
       
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> -->
+      
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="/contactus">Contact Us</a>
+    </li>
+    </ul>
   </div>
 </nav>
 </div>
@@ -62,14 +61,14 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
+                <div class="card-body bg-secondary mb-3">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                    Welcome {{ __( Auth::user()->name) }}
+                    <h5 class="text-white">Welcome {{ __( Auth::user()->name) }}</h5>
 
 <div class="card">
   
