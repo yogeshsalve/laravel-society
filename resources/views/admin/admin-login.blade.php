@@ -18,7 +18,7 @@
       <div class="card-body ">
 
         <div class="container">
-          <form action="admin" method="POST">
+          <form action="admin-dashboard" method="POST">
               @csrf
               <div class="form-group">
               <label for="inputemail">Email Id</label>

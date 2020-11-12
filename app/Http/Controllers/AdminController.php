@@ -17,15 +17,30 @@ class AdminController extends Controller
 
     function addAdmin(Request $request)
     {
-        $admin= Admin::where(['email'=>$request->email])->first();
-        if(!$admin::check($request->password, $admin->password))
+        
+        $admin = admin::where('email',$request->email)->where('password',$request->password)->get()->first();
+        if($admin)
         {
-            return "Email Id or Password does not match !";
+            return redirect('admin-dashboard');
+
         }
-        else
-        {
-            return redirect('admin.admin-dashboard');
+        else{
+            return redirect('admin');
         }
+        
+        
+        
+        
+        
+        // $admin= Admin::where(['email'=>$request->email])->first();
+        // if(!$admin::check($request->password, $admin->password))
+        // {
+        //     return "Email Id or Password does not match !";
+        // }
+        // else
+        // {
+        //     return redirect('admin.admin-dashboard');
+        // }
         
         // $admin  = new Admin;
         // $admin->email= $request->email;

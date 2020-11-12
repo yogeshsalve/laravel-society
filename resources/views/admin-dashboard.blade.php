@@ -1,22 +1,14 @@
-@extends('layouts.app')
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<style>
-  .card-header{
-        height: 40px;
-   }
-   html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-
-@section('content')
-<div >
+    <!-- navbar -->
+    <div >
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="">Society</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,15 +21,11 @@
         <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/maintenance">Pay Maintenance</a>
+        <a class="nav-link" href="/">Maintenance</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/household">Household</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/amenities">Amenities</a>
+        <a class="nav-link" href="/">Amenities</a>
       </li>
      
       <li class="nav-item">
@@ -56,21 +44,8 @@
   </div>
 </nav>
 </div>
-<div>
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body bg-secondary mb-3">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <h5 class="text-white">Welcome {{ __( Auth::user()->name) }}</h5>
-
+    <!-- navbar -->
+<br>
 <div class="card">
 <div class="row">
   <div class="col-sm-6">
@@ -81,20 +56,9 @@
         
         <div class="container">
 <div class="card" style="width: 28rem;">
-  <div class="card-header text-white" style="background-color: #1d5bb8;">
-    <h4><center>Todays Visitors</center></h4>
-  </div>
+  
   <!-- <br> -->
-  <table border="1">
-<tr>
-<th>Id</td>
-<th>Name</th>
-<th>Contact No</th>
-<th>Vehicle No</th>
-</tr>
-
-
-</table>
+  
 
 
 
@@ -148,18 +112,5 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-@endsection
 </body>
 </html>
