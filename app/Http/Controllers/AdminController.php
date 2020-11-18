@@ -32,15 +32,7 @@ class AdminController extends Controller
         
         
         
-        // $admin= Admin::where(['email'=>$request->email])->first();
-        // if(!$admin::check($request->password, $admin->password))
-        // {
-        //     return "Email Id or Password does not match !";
-        // }
-        // else
-        // {
-        //     return redirect('admin.admin-dashboard');
-        // }
+        
         
         // $admin  = new Admin;
         // $admin->email= $request->email;

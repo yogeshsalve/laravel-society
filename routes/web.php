@@ -5,7 +5,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\contactusController;
 use App\Http\Controllers\AdminController;
-
+use App\Http\Controllers\MaintenanceController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,10 +54,14 @@ Route::post('admin-dashboard', [AdminController::class, 'addAdmin']);
  Route::get('visitors', [VisitorController::class, 'visitors']); 
  Route::post('visitors',[VisitorController::class, 'addData']); 
  Route::get('visitor_list',[VisitorController::class, 'show']); 
+
+// route to display visitors on homepage
+Route::get('/home',[HomeController::class, 'todaysvisitors'])->name('visitor.list'); 
+
  
  Route::post('contactus', [contactusController::class, 'addContact']);
 
-
+ 
 
 Auth::routes();
 

@@ -39,6 +39,38 @@
                             </div>
                         </div>
 
+                        <!-- new fields added -->
+                        <div class="form-group row">
+                            <label for="flat_no" class="col-md-4 col-form-label text-md-right">{{ __('flat_no') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="flat_no" type="text" class="form-control @error('flat_no') is-invalid @enderror" name="flat_no" value="{{ old('flat_no') }}" required autocomplete="flat_no">
+
+                                @error('flat_no')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="contact_no" class="col-md-4 col-form-label text-md-right">{{ __('contact_no') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="contact_no" type="text" class="form-control @error('contact_no') is-invalid @enderror" name="contact_no" value="{{ old('contact_no') }}" required autocomplete="contact_no">
+
+                                @error('contact_no')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <!-- new fields added -->
+
+                        
+
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 

@@ -17,7 +17,7 @@
 
 @section('content')
 <div >
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="">Society</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -54,110 +54,84 @@
     </li>
     </ul>
   </div>
-</nav>
+  </nav>
 </div>
+
 <div>
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body bg-secondary mb-3">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <h5 class="text-white">Welcome {{ __( Auth::user()->name) }}</h5>
-
-<div class="card">
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        
-        
-        <div class="container">
-<div class="card" style="width: 28rem;">
-  <div class="card-header text-white" style="background-color: #1d5bb8;">
-    <h4><center>Todays Visitors</center></h4>
-  </div>
-  <!-- <br> -->
-  <table border="1">
-<tr>
-<th>Id</td>
-<th>Name</th>
-<th>Contact No</th>
-<th>Vehicle No</th>
-</tr>
-
-
-</table>
-
-
-
-
-
-
-</div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <p class="card-text">you are a normal user below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Events, Notices and Meetings</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card">
-  
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Responsibilities</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Staff Status</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-                </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">{{ __('Dashboard') }}</div>
+          <div class="card-body bg-secondary mb-3">
+            @if (session('status'))
+            <div class="alert alert-success" role="alert">
+              {{ session('status') }}
             </div>
+            @endif
+            <h5 class="text-white">Welcome {{ __( Auth::user()->name) }}</h5>
+
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+        
+        
+                        <div class="container">
+                          <div class="card" style="width: 28rem;">
+                            <div class="card-header text-white" style="background-color: #1d5bb8;">
+                            <h4><center>Todays Visitors</center></h4>
+                            </div>
+  <!-- <br> -->
+                            
+                         </div>
+                        </div>
+                        <p class="card-text">you are a normal user below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                      <h5 class="card-title">Events, Notices and Meetings</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Responsibilities</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Staff Status</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 @endsection

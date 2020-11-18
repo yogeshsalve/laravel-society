@@ -34,4 +34,6 @@ class VisitorController extends Controller
         $data= visitor::all();
         return view('visitor_list',['visitors'=>$data]);
     }
+
+    
 }

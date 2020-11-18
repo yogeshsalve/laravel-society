@@ -70,7 +70,8 @@
         
                
         
-    <form>
+    <form action="TxnTest" method="POST">
+    @csrf
   
 
   <div class="form-row">

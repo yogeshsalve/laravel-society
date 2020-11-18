@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\visitor;
+
 
 class HomeController extends Controller
 {
+ 
+     
     /**
      * Create a new controller instance.
      *
@@ -24,8 +29,14 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+        
+    }
+    public function todaysvisitors()
+    {
+        $visitors = DB::table('visitors')->get();
+        return view('home', compact('visitors'));
     }
 
-   
+    
 
   }

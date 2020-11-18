@@ -46,7 +46,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <!-- <div class="card-header">{{ __('Dashboard') }}</div> -->
 
                 <div class="card-body bg-secondary mb-3">
                     @if (session('status'))
@@ -60,12 +60,58 @@
 <div class="card">
   
 <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-12">
+    <div class="card ">
       <div class="card-body">
-        <h5 class="card-title">Amenities Section</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+       
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <img src="/images/gym1.png" class="card-img-top" height="200" alt="...">
+            
+            <div class="card-body">
+            <h3 class="card-title">Gymnasium</h3>
+            <!-- <p class="card-text">To book your gym slot Click on below button</p> -->
+            <a href="#" class="btn btn-primary">Click to Book your Slot</a>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <img src="/images/pool.jpg" class="card-img-top" height="200" alt="...">
+            <div class="card-body">
+            <h3 class="card-title">Swimming pool</h3>
+            <!-- <p class="card-text">To book your gym slot Click on below button</p> -->
+            <a href="#" class="btn btn-primary">Click to Book your Slot</a>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <img src="/images/tennis.png" class="card-img-top" height="200" alt="...">
+            <div class="card-body">
+            <h3 class="card-title">Tennis Court</h3>
+            <!-- <p class="card-text">To book your gym slot Click on below button</p> -->
+            <a href="#" class="btn btn-primary">Click to Book your Slot</a>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <img src="/images/pool.jpg" class="card-img-top" height="200" alt="...">
+            <div class="card-body">
+            <h3 class="card-title">Swimming pool</h3>
+            <!-- <p class="card-text">To book your gym slot Click on below button</p> -->
+            <a href="#" class="btn btn-primary">Click to Book your Slot</a>
+            </div>
+            </div>
+          </div>
+        </div>
+  
       </div>
     </div>
   </div>
